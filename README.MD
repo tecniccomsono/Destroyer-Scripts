@@ -4,6 +4,8 @@
 
 - O projeto consiste em um HUB com automações para a Sala do Futuro, um aplicativo educacional para escolas estaduais do estado de são paulo.
 
+- https://destroyer-scripts.vercel.app/
+
 <br>
 
 <div align="center">
