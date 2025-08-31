@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang=pt-BR>
+   <head>
+      <meta charset=UTF-8>
+      <meta name=viewport content="width=device-width,initial-scale=1">
+      <title>CMSP-Scripts</title>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel=stylesheet>
+      <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css>
+      <link rel="shortcut icon" href=https://imgs.search.brave.com/NJgJ4zNTHZhQV3XuY3qQhp3Zr4TQrE3nCKLlk5uRqJU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvY29kZS9jb2Rl/X1BORzg2LnBuZw type=image/png>
+      <link rel=stylesheet href=src/css/styles.css>
+   </head>
+   <body data-theme=dark>
+      <div id=mainApp class="main-app active">
+         <nav class=navbar>
+            <div class=nav-container>
+               <div class=nav-left>
+                  <button id=sidebarToggle class=sidebar-toggle>
+                  <i class="fas fa-bars"></i>
+                  </button>
+                  <a href=# class=logo>
+                  <i class="fas fa-code"></i>
+                  <span>CMSP-Scripts</span>
+                  </a>
+               </div>
+               <div class=nav-right>
+                  <button id=themeToggle class=theme-toggle>
+                  <i class="fas fa-moon"></i>
+                  </button>
+               </div>
+            </div>
+         </nav>
+         <aside id=sidebar class=sidebar>
+            <div class=sidebar-header>
+               <div class=sidebar-logo>
+                  <i class="fas fa-code"></i>
+                  <span>Menu</span>
+               </div>
+            </div>
+            <div class=sidebar-content>
+               <div class=sidebar-section>
+                  <h3 class=sidebar-section-title>Principal</h3>
+                  <ul class=sidebar-menu>
+                     <li class="sidebar-item active">
+                        <a href=#home class=sidebar-link data-page=home>
+                        <i class="fas fa-home"></i>
+                        <span>Início</span>
+                        </a>
+                     </li>
+                     <li class=sidebar-item>
+                        <a href=#scripts class=sidebar-link data-page=scripts>
+                        <i class="fas fa-terminal"></i>
+                        <span>Scripts</span>
+                        <span class=sidebar-badge>10</span>
+                        </a>
+                     </li>
+                     <li class=sidebar-item>
+                        <a href=#creditos class=sidebar-link data-page=creditos>
+                        <i class="fas fa-heart"></i>
+                        <span>Créditos</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </aside>
+         <main id=mainContent class=main-content>
+            <div id=homePage class="page active">
+               <section class=hero>
+                  <div class=hero-background>
+                     <div class=hero-shapes>
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                     </div>
+                  </div>
+                  <div class=container>
+                     <div class=hero-content>
+                        <a href=https://discord.gg/nAdEXj5Zqu>
+                           <div class=hero-badge>
+                              <i class="fab fa-discord"></i>
+                              <span>Platform Destroyer</span>
+                           </div>
+                        </a>
+                        <h1 class=hero-title>
+                           Os melhores Scripts<br>
+                           para seus estudos
+                        </h1>
+                        <p class=hero-subtitle>
+                           Utilize os melhores scripts feitos para te ajudar na sala do futuro! :D
+                        </p>
+                        <div class=hero-actions>
+                           <a href=#scripts class="btn btn-primary btn-large" data-page=scripts>
+                           <span>Explorar Scripts</span>
+                           <i class="fas fa-arrow-right"></i>
+                           </a>
+                        </div>
+                        <div class=hero-stats>
+                           <div class=stat-item>
+                              <span class=stat-number data-target=10>0</span>
+                              <span class=stat-label>Scripts</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div id=scriptsPage class=page>
+               <section class=scripts-section>
+                  <div class=container>
+                     <div class=section-header>
+                        <h2 class=section-title>Scripts Disponíveis</h2>
+                        <p class=section-subtitle>Ferramentas para otimizar seus estudos</p>
+                     </div>
+                     <div class=scripts-search>
+                        <div class=search-container>
+                           <i class="fas fa-search"></i>
+                           <input id=scriptsSearch class=search-input placeholder="Buscar scripts por nome, categoria ou descrição...">
+                           <button id=searchClear class=search-clear style=display:none>
+                           <i class="fas fa-times"></i>
+                           </button>
+                        </div>
+                        <div id=searchResults class=search-results style=display:none></div>
+                     </div>
+                     <div class=filter-tabs>
+                        <button class="filter-tab active" data-filter=all>Todos</button>
+                        <button class=filter-tab data-filter=leitura>Leia</button>
+                        <button class=filter-tab data-filter=tarefas>Tarefas</button>
+                        <button class=filter-tab data-filter=redação>Redação</button>
+                     </div>
+                     <div class=scripts-grid></div>
+                  </div>
+               </section>
+               <section class=stats-section>
+                  <div class=container>
+                     <div class=stats-grid>
+                        <div class=stat-card>
+                           <div class=stat-icon>
+                              <i class="fas fa-code"></i>
+                           </div>
+                           <div class=stat-info>
+                              <span class=stat-number data-target=10>0</span>
+                              <span class=stat-label>Scripts Disponíveis</span>
+                           </div>
+                        </div>
+                        <div class=stat-card>
+                           <div class=stat-icon>
+                              <i class="fas fa-users"></i>
+                           </div>
+                        </div>
+                        <div class=stat-card>
+                           <div class=stat-icon>
+                              <i class="fas fa-star"></i>
+                           </div>
+                           <div class=stat-info>
+                              <span class=stat-number data-target=98>0</span>
+                              <span class=stat-label>Satisfação</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div id=creditosPage class=page>
+               <div class=container>
+                  <div class=page-header>
+                     <h1>Créditos</h1>
+                     <p>Contribuidores do projeto CMSP-Scripts :D</p>
+                  </div>
+                  <div class=empty-state>
+                     <i class="fas fa-heart"></i>
+                     <h3>Contribuidores:</h3>
+                     <p>Criador original: Who Asked</p>
+                     <p>Frontend: Who Asked & Tecniccomsono</p>
+                     <p>Animações: Tecniccomsono</p>
+                     <p>Scripts: Who Asked</p>
+                     <p>agradecimentos nao especiais e sim odiais: thiago o criador (nos de pesames)</p>
+                  </div>
+               </div>
+            </div>
+            <div id=overlay class=overlay></div>
+         </main>
+      </div>
+      <script src=src/script/script.js></script>
+   </body>
+</html>
